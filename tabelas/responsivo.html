@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        table{
+            width: 50vw;
+            border-collapse: collapse;
+        }
+
+        tr{
+            text-align: left;
+        }
+
+        th, td{
+            padding: 10px;
+        }
+
+        /*
+        tr:hover{
+            background-color: skyblue;
+        }
+        */
+
+        tr:nth-child(even){
+            background-color: rgb(241, 241, 241);
+            /*Para adicionar um efeito listrado*/
+        }
+
+        th{
+            background-color: rgb(29, 160, 29);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsividade em uma tabela</h1>
+
+    <div style="overflow-x: auto;">
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+                <th>Pontos</th>
+            </tr>
+            <tr>
+                <td>Fernando</td>
+                <td>Toshiba</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Larissa</td>
+                <td>Simões</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>Silva</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+                <td>67</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
