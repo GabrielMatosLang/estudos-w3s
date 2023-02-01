@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegação Responsiva</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul.sidenav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: rgb(202, 202, 202);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        ul.sidenav li a{
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        ul.sidenav li a.active{
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        ul.sidenav li a:hover:not(.active){
+            background-color: #555;
+            color: white;
+        }
+
+        div.content{
+            margin-left: 25%;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 900px){
+            ul.sidenav{
+                width: 100%;
+                height: auto;
+                position:relative
+            }
+
+            ul.sidenav li a{
+                float: left;
+                padding: 15px;
+            }
+
+            div.content{
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            ul.sidenav li a{
+                text-align: center;
+                float: none;
+            }
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+     <ul class="sidenav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Mais</a></li>
+     </ul>
+    
+     <div class="content">
+         <h1>Barra de navegação responsiva</h1>
+         <p>Responsiva para celulares e tablets</p>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quod placeat dignissimos, consequuntur eveniet molestiae voluptatum quos a molestias velit aut beatae tempore architecto facilis voluptate quia neque, totam reprehenderit!</p>
+     </div>
+</body>
+</html>
