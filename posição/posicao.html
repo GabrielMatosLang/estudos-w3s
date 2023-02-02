@@ -6,59 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posicionamento</title>
     <style>
+        div.sticky{
+            position: sticky;
+            top: 0;
+            border: 2px solid skyblue;
+            padding: 10px 20px;
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
         div.static{
             position: static;
-            border: 2px solid blue;
-            font-size: 1.5rem;
-            width: 50vw;
+            border: 2px solid skyblue;
+            padding: 10px 20px;
+            width: 50%;
+            font-size: 1.2rem;
         }
 
         div.relative{
             position: relative;
-            border: 2px solid blue;
-            font-size: 1.5rem;
-            width: 50vw;
+            border: 2px solid skyblue;
+            padding: 10px 20px;
+            width: 50%;
+            font-size: 1.2rem;
         }
-
-        div.fixed{
-            position: fixed;
-            left: 50px;
-            border: 2px solid blue;
-            font-size: 1.5rem;
-            width: 50vw;
-        }
-        
 
         div.relativo{
             position: relative;
-            width: 50vw;
-            height: 40vh;
-            border: 2px solid blue;
-            font-size: 1.5rem;
+            border: 2px solid skyblue;
+            padding: 10px 20px;
+            width: 50%;
+            height: 100px;
+            font-size: 1.2rem;
+
         }
 
         div.absoluto{
             position: absolute;
-            width: 300px;
-            height: 100px;
-            top: 50%;
+            border: 2px solid skyblue;
+            padding: 10px 20px;
+            width: 35%;
+            height: 20%;
             left: 50%;
-            border: 2px solid blue;
-            font-size: 1.5rem;
-            /*a ponta do lado esquerdo superior esta exatamente no meio*/
+            top: 50%;
+            font-size: 1.2rem;
         }
 
-        div.sticky{
-            position: sticky;
-            border: 2px solid blue;
-            top: 0;
-            padding: 5px;
-            font-size: 1.5rem;
-            width: 50vw;
+        div.fixed{
+            position: fixed;
+            border: 2px solid skyblue;
+            padding: 10px 20px;
+            width: 50%;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
+    <h2>position:sticky;</h2>
+    <div class="sticky">Este é um elemento "pegajoso"</div>
 
     <section>
         <h2>position:static;</h2>
@@ -71,11 +76,6 @@
     </section>
 
     <section>
-        <h2>position:fixed;</h2>
-        <div class="fixed">Este é um elemento fixo</div>
-    </section>
-    <br><br>
-    <section>
         <h2>position:absolute;</h2>
         <div class="relativo">
             Este é um elemento relativo
@@ -83,8 +83,11 @@
         </div>
     </section>
 
-    <h2>position:sticky;</h2>
-    <div class="sticky">Este é um elemento "pegajoso"</div>
+    <section>
+        <h2>position:fixed;</h2>
+        <div class="fixed">Este é um elemento fixo</div>
+    </section>
+    <br><br><br>
     <div style="padding-bottom: 2000px;">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur accusantium sapiente beatae repellendus. Odio neque, iste natus maxime dolorem voluptatum ipsam sunt esse, reiciendis ducimus corporis! Necessitatibus labore asperiores doloremque?</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur accusantium sapiente beatae repellendus. Odio neque, iste natus maxime dolorem voluptatum ipsam sunt esse, reiciendis ducimus corporis! Necessitatibus labore asperiores doloremque?</p>
