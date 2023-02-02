@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        p#test1{
+            background-color: rgb(174, 231, 253);
+            width: 30%;
+            height: 200px;
+            padding: 10px;
+            font-size: 1.5rem;
+            overflow: auto;
+            /*o "auto" cria uma barra de rolagem caso necessário*/
+        }
+
+        p#test2{
+            background-color: rgb(174, 231, 253);
+            width: 30%;
+            height: 200px;
+            padding: 10px;
+            font-size: 1.5rem;
+            overflow: hidden;
+            /*o "hidden" corta o texto caso passe do tamanho especificado*/
+        }
+
+        p#test3{
+            background-color: rgb(174, 231, 253);
+            width: 30%;
+            height: 200px;
+            padding: 10px;
+            font-size: 1.5rem;
+            overflow: scroll;
+            /*o "sroll" cria barra de rolagem nos dois sentidos, mesmo não tendo necessidade*/
+        }
+
+        p#test4{
+            background-color: rgb(174, 231, 253);
+            width: 30%;
+            height: 200px;
+            padding: 10px;
+            font-size: 1.5rem;
+            overflow: visible;
+            /*o "visible" deixa vísivel*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando a propriedade Overflow</h1>
+    <h2>Com overflow:auto;</h2>
+    <p id="test1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita voluptatem, dolorum quia doloribus excepturi modi earum amet numquam quod debitis in cumque, nesciunt incidunt soluta officia quaerat asperiores dolores quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptates impedit labore culpa quidem? Et, laboriosam tenetur sed vitae similique blanditiis nulla libero harum dignissimos suscipit voluptates iure, ipsa perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis magni cumque tempora ipsam, placeat atque. Eaque quo consectetur, illo quam ratione itaque minima, reiciendis voluptate, eum adipisci a corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus totam ad quam aperiam quis! Sapiente porro nesciunt, libero, sit dignissimos aspernatur labore, inventore cum voluptatum quos natus. Est, odio maiores!</p>
+    <h2>Com overflow:hidden;</h2>
+    <p id="test2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita voluptatem, dolorum quia doloribus excepturi modi earum amet numquam quod debitis in cumque, nesciunt incidunt soluta officia quaerat asperiores dolores quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptates impedit labore culpa quidem? Et, laboriosam tenetur sed vitae similique blanditiis nulla libero harum dignissimos suscipit voluptates iure, ipsa perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis magni cumque tempora ipsam, placeat atque. Eaque quo consectetur, illo quam ratione itaque minima, reiciendis voluptate, eum adipisci a corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus totam ad quam aperiam quis! Sapiente porro nesciunt, libero, sit dignissimos aspernatur labore, inventore cum voluptatum quos natus. Est, odio maiores!</p>
+    <h2>Com overflow:scrool;</h2>
+    <p id="test3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita voluptatem, dolorum quia doloribus excepturi modi earum amet numquam quod debitis in cumque, nesciunt incidunt soluta officia quaerat asperiores dolores quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptates impedit labore culpa quidem? Et, laboriosam tenetur sed vitae similique blanditiis nulla libero harum dignissimos suscipit voluptates iure, ipsa perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis magni cumque tempora ipsam, placeat atque. Eaque quo consectetur, illo quam ratione itaque minima, reiciendis voluptate, eum adipisci a corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus totam ad quam aperiam quis! Sapiente porro nesciunt, libero, sit dignissimos aspernatur labore, inventore cum voluptatum quos natus. Est, odio maiores!</p>
+    <h2>Com overflow:visible;</h2>
+    <p id="test4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita voluptatem, dolorum quia doloribus excepturi modi earum amet numquam quod debitis in cumque, nesciunt incidunt soluta officia quaerat asperiores dolores quisquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptates impedit labore culpa quidem? Et, laboriosam tenetur sed vitae similique blanditiis nulla libero harum dignissimos suscipit voluptates iure, ipsa perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis magni cumque tempora ipsam, placeat atque. Eaque quo consectetur, illo quam ratione itaque minima, reiciendis voluptate, eum adipisci a corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus totam ad quam aperiam quis! Sapiente porro nesciunt, libero, sit dignissimos aspernatur labore, inventore cum voluptatum quos natus. Est, odio maiores!</p>
+</body>
+</html>
