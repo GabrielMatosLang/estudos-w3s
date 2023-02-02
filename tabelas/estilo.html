@@ -7,34 +7,26 @@
     <title>Estilo da Tabela</title>
     <style>
         table{
-            width: 50vw;
             border-collapse: collapse;
+            border: 1px solid black;
         }
 
-        tr{
-            text-align: left;
+        th ,td{
+            width: 200px;
+            padding: 20px 30px;
+            text-align: center
         }
-
-        th, td{
-            padding: 10px;
-        }
-
-        /*
-        tr:hover{
-            background-color: skyblue;
-        }
-        */
 
         tr:nth-child(even){
-            background-color: lightgray;
-            /*Para adicionar um efeito listrado*/
+            background-color: rgb(236, 236, 236);
         }
 
+
         th{
-            background-color: rgb(29, 160, 29);
-            color: white;
+            background-color: skyblue;
         }
     </style>
+       
 </head>
 <body>
     <h1>Adicionando estilo em uma tabela</h1>

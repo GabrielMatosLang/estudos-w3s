@@ -9,6 +9,7 @@
         table{
             width: 50vw;
             border-collapse: collapse;
+            border: 1px solid black;
         }
 
         tr{
@@ -19,28 +20,27 @@
             padding: 10px;
         }
 
-        /*
-        tr:hover{
-            background-color: skyblue;
-        }
-        */
-
         tr:nth-child(even){
             background-color: rgb(241, 241, 241);
             /*Para adicionar um efeito listrado*/
         }
 
         th{
-            background-color: rgb(29, 160, 29);
-            color: white;
+            background-color: skyblue;
+        }
+
+        div{
+            overflow-x: auto;
+            /*Para deixar uma tabela resposiva na horizontal*/
         }
     </style>
 </head>
 <body>
     <h1>Responsividade em uma tabela</h1>
 
-    <div style="overflow-x: auto;">
+    <div>
         <table>
+            <caption>Título da Tabela</caption>
             <tr>
                 <th>Nome</th>
                 <th>Sobrenome</th>
