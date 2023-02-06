@@ -8,14 +8,25 @@
 </head>
 <body>
     <h1>Formulários com telefone e e-mail</h1>
-    <form action="action.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="ifone">Telefone:</label>
+                <input type="tel" name="fone" id="ifone" required autocomplete="tel">
+            </p>
+        </fieldset>
         <p>
-            <label for="iemail">E-mail:</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email">
-        </p>
-        <p>
-            <label for="ifone">Telefone:</label>
-            <input type="tel" name="fone" id="ifone" required autocomplete="tel">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
